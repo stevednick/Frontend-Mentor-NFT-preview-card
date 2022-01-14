@@ -1,0 +1,198 @@
+html {
+  font-size: 18px;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: #0d192b;
+}
+
+main {
+  display: grid;
+  min-height: 100vh;
+}
+
+.card {
+  background-color: #14253d;
+  max-width: 18rem;
+  place-self: center;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  box-shadow: 0 0.5rem 0.3rem 1rem #0c1627, 0 1rem 0.7rem 2.5rem #0e1b2f;
+}
+
+.equlibrium-holder {
+  cursor: pointer;
+  border-radius: 6px;
+  margin: 1.4rem;
+  height: 15.2rem;
+  position: relative;
+  overflow: hidden;
+  display: grid;
+}
+
+.equlibrium-holder:hover .equilibrium-cover {
+  transition: ease-in 0.2s;
+  opacity: 30%;
+}
+
+.equlibrium-holder:hover .view-icon {
+  transition: ease-in 0.2s;
+  opacity: 100%;
+}
+
+.equilibrium-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+}
+
+.equilibrium-cover {
+  transition: ease-in 0.2s;
+  width: 100%;
+  height: 100%;
+  background-color: #00fff7;
+  opacity: 0%;
+  position: absolute;
+  top: 0;
+}
+
+.view-icon {
+  transition: ease-in 0.2s;
+  opacity: 0%;
+  place-self: center;
+  z-index: 1;
+}
+
+.title {
+  cursor: pointer;
+  color: white;
+  font-size: 1.26rem;
+  font-weight: 400;
+  margin-left: 1.4rem;
+  margin-top: 0.2rem;
+}
+
+.title:hover {
+  transition: ease-in 0.2s;
+  color: #00fff7;
+}
+
+.description-text {
+  color: #8bacda;
+  margin: 0.75rem 1.4rem 0 1.4rem;
+  margin-left: 1.4rem;
+  font-size: 0.89rem;
+  font-weight: 300;
+  line-height: 1.45rem;
+}
+
+.details-holder {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0rem 1.4rem;
+}
+
+.icon-ethereum {
+  max-height: 1rem;
+}
+
+.price {
+  margin-left: 0.4rem;
+  margin-right: auto;
+  color: #00fff7;
+  font-size: 0.85rem;
+}
+
+.time-left {
+  color: #8bacda;
+  font-size: 0.82rem;
+  margin-left: 0.4rem;
+}
+
+.line {
+  height: 1px;
+  background-color: #2f415b;
+  margin: 0.1rem 1.4rem;
+}
+
+.creator-holder {
+  display: flex;
+  align-items: center;
+  margin: 0.6rem 1.4rem 1rem;
+}
+
+.creator-image {
+  height: 1.7rem;
+  border-radius: 50%;
+  box-shadow: 0 0 3px white;
+}
+
+.creator-text {
+  font-size: 0.8rem;
+  margin-left: 1rem;
+  color: #8bacda;
+}
+
+.creator-link {
+  color: white;
+  text-decoration: none;
+  margin-left: 0.2rem;
+  font-weight: 200;
+}
+
+.creator-link:hover {
+  transition: ease-in 0.2s;
+  color: #00fff7;
+}
+
+.attribution {
+  place-self: end center;
+  padding-bottom: 0.5rem;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+@media screen and (min-width: 600px) {
+  .card {
+    max-width: 19.3rem;
+  }
+
+  .equlibrium-holder {
+    height: 16.5rem;
+  }
+
+  .title {
+    margin-top: 0rem;
+  }
+
+  .description-text {
+    font-size: 1rem;
+    margin-top: 0.9rem;
+  }
+
+  .details-holder {
+    margin-top: 0.4rem;
+  }
+
+  .price, .time-left {
+    font-size: 0.9rem;
+  }
+
+  .line {
+    margin-top: 0.4rem;
+  }
+
+  .creator-text {
+    font-size: 0.85rem;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
