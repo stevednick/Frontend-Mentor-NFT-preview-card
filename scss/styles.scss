@@ -11,7 +11,7 @@ $very-dark-blue-line: hsl(215, 32%, 27%);
 $white: hsl(0, 0%, 100%);
 
 html{
-  font-size: 18px;
+  //font-size: 18px;
 }
 
 body{
@@ -19,27 +19,43 @@ body{
   background-color: $very-dark-blue-main;
 }
 
+h1{
+  margin: 0;
+}
+
+abbr[title] {
+  border-bottom: none !important;
+  cursor: inherit !important;
+  text-decoration: none !important;
+}
+
 .page-container{
   min-height: 100vh;
   position: relative;
+  display: grid;
+}
+
+.content-wrap{
+  place-self: center;
+  display: grid;
+  margin: 1rem 1rem 3rem;
 }
 
 .card{
   background-color: $very-dark-blue-card;
-  max-width: 18rem;
+  max-width: 20.25rem;
   place-self: center;
   display: flex;
   flex-direction: column;
   border-radius: 15px;
   box-shadow: 0 0.5rem 0.3rem 1rem hsl(219, 52%, 10%), 0 1rem 0.7rem 2.5rem hsl(217, 54%, 12%);
-  margin: 1rem;
 }
 
 .equlibrium-holder{
   cursor: pointer;
   border-radius: 6px;
-  margin: 1.4rem;
-  height: 15.2rem;
+  margin: 1.6rem;
+  height: 17.1rem;
   position: relative;
   overflow: hidden;
   display: grid;
@@ -83,10 +99,10 @@ body{
 .title{
   cursor: pointer;
   color: $white;
-  font-size: 1.26rem;
+  font-size: 1.41rem;
   font-weight: 400;
-  margin-left: 1.4rem; // Pack these in;
-  margin-top: 0.2rem;
+  margin-left: 1.6rem; // Pack these in;
+  margin-top: 0.22rem;
 }
 
 .title:hover{
@@ -96,29 +112,28 @@ body{
 
 .description-text{
   color: $soft-blue;
-  margin: 0.75rem 1.4rem 0 1.4rem;
-  margin-left: 1.4rem;
-  font-size: 0.89rem;
+  margin: 0.85rem 1.57rem 0 1.57rem;
+  font-size: 1rem;
   font-weight: 300;
-  line-height: 1.45rem;
+  line-height: 1.63rem;
 }
 
 .details-holder{
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: 0rem 1.4rem;
+  margin: 0rem 1.57rem;
 }
 
 .icon-ethereum{
-  max-height: 1rem;
+  max-height: 1.125rem;
 }
 
 .price{
-  margin-left: 0.4rem;
+  margin-left: 0.45rem;
   margin-right: auto;
   color: $cyan;
-  font-size: 0.85rem;
+  font-size: 0.95rem;
 }
 
 .icon-clock{
@@ -127,38 +142,38 @@ body{
 
 .time-left{
   color: $soft-blue;
-  font-size: 0.82rem;
-  margin-left: 0.4rem;
+  font-size: 0.92rem;
+  margin-left: 0.45rem;
 }
 
 .line{
   height: 1px;
   background-color: $very-dark-blue-line;
-  margin: 0.1rem 1.4rem;
+  margin: 0.11rem 1.57rem;
 }
 
 .creator-holder{
   display: flex;
   align-items: center;
-  margin: 0.6rem 1.4rem 1rem;
+  margin: 0.67rem 1.57rem 1.12rem;
 }
 
 .creator-image{
-  height: 1.7rem;
+  height: 1.9rem;
   border-radius: 50%;
   box-shadow: 0 0 3px $white;
 }
 
 .creator-text{
-  font-size: 0.8rem;
-  margin-left: 1rem;
+  font-size: 0.9rem;
+  margin-left: 1.12rem;
   color: $soft-blue;
 }
 
 .creator-link{
   color: $white;
   text-decoration: none;
-  margin-left: 0.2rem;
+  margin-left: 0.225rem;
   font-weight: 200;
 }
 
@@ -171,10 +186,10 @@ body{
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 2rem;
+  height: 2.25rem;
   font-size: 11px;
   text-align: center;
-  padding-top: 2rem;
+  margin-top: 2.25rem;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
@@ -182,28 +197,28 @@ body{
 
 @media screen and (min-width: 600px){
   .card{
-    max-width: 19.3rem;
+    max-width: 21.7rem;
   }
   .equlibrium-holder{
-    height: 16.5rem;
+    height: 18.9rem;
   }
   .title{
     margin-top: 0rem;
   }
   .description-text{
-    font-size: 1rem;
-    margin-top: 0.9rem;
+    font-size: 1.125rem;
+    margin-top: 1rem;
   }
   .details-holder{
-    margin-top: 0.4rem;
+    margin-top: 0.45rem;
   }
   .price, .time-left{
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
   .line{
-    margin-top: 0.4rem;
+    margin-top: 0.45rem;
   }
   .creator-text{
-    font-size: 0.85rem;
+    font-size: 0.95rem;
   }
 }
