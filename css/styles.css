@@ -7,9 +7,9 @@ body {
   background-color: #0d192b;
 }
 
-main {
-  display: grid;
+.page-container {
   min-height: 100vh;
+  position: relative;
 }
 
 .card {
@@ -20,6 +20,7 @@ main {
   flex-direction: column;
   border-radius: 15px;
   box-shadow: 0 0.5rem 0.3rem 1rem #0c1627, 0 1rem 0.7rem 2.5rem #0e1b2f;
+  margin: 1rem;
 }
 
 .equlibrium-holder {
@@ -150,10 +151,13 @@ main {
 }
 
 .attribution {
-  place-self: end center;
-  padding-bottom: 0.5rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2rem;
   font-size: 11px;
   text-align: center;
+  padding-top: 2rem;
 }
 
 .attribution a {
